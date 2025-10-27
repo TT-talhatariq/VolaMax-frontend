@@ -1,0 +1,18 @@
+{
+  "default_branch": "main",
+  "branches": [
+    "CAR-2015",
+    "CAR-2131",
+    "main"
+  ],
+  "parent": {
+    "CAR-2015": "main",
+    "CAR-2131": "main",
+    "main": null
+  },
+  "order": [
+    "main",
+    "CAR-2015",
+    "CAR-2131"
+  ]
+}
