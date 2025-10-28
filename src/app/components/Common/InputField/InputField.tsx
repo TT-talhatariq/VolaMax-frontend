@@ -31,7 +31,6 @@ export const InputField: React.FC<InputFieldProps> = ({
   const [selected, setSelected] = useState<string>('');
   const [inputValue, setInputValue] = useState<string>(value);
 
-  // Update internal state when external value changes
   React.useEffect(() => {
     if (!isDropdown) {
       setInputValue(value);
@@ -47,7 +46,7 @@ export const InputField: React.FC<InputFieldProps> = ({
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const newValue = e.target.value;
     setInputValue(newValue);
-    onChange?.(e); // Call external onChange handler
+    onChange?.(e);
   };
 
   return (
